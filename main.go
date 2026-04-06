@@ -1,15 +1,10 @@
 package main
 
-import (
-	"os"
-
-	"b.lang/learn_go_with_tests/mocking"
-)
-
 
 func main(){
-	sleeper := &mocking.DefaultSleeper{}
-
-	mocking.Countdown(os.Stdout, sleeper)
+	//This throws an error since the struct literals are private 
+	// and only assignable within the same package. Uncomment to see error
+	// sleeper := &mocking.ConfigurableSleeper{1 * time.Second, time.Sleep}
+	// mocking.Countdown(os.Stdout, sleeper)
 }
 
