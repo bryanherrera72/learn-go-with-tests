@@ -1,7 +1,7 @@
 package main
 
-
-func main(){
+func main() {
 	// SpinnerEx()
-	Clock1()
+	// Clock1()
+	Timer()
 }
